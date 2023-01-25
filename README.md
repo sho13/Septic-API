@@ -45,6 +45,7 @@
 
 * What went well?
     - Setting up Django and the fake HouseCanary service to handle Data Mocking
+    - Using virtualenv to handle development
 
 * What could be improved in the project?
     - Honestly wanted to be able to leverage Django Restframework with more fluidity, opted to just use Django as is due to time constraints.
