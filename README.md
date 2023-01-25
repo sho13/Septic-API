@@ -18,7 +18,7 @@
     $ pip install -r requirements.txt
     ```
 
-4. OPTIONAL - Run Migrations
+4. OPTIONAL - Run Migrations, best practice is to run migrations, but not necessary for this app to run.
     ```bash
     $ python manage.py migrate
     ```
@@ -38,15 +38,18 @@
     ```
 
 ## Notes
-- **GOAL**: Create an API that'll prompt homeowners if home has a septic system.
-- not Client facing
-- Aggregate information in the BE
-- Leverage an API to retrieve info from Housecanary
+    - **GOAL**: Create an API that'll prompt homeowners if home has a septic system.
+    - not Client facing
+    - Aggregate information in the BE
+    - Leverage an API to retrieve info from Housecanary
 
-* What went well?
-    - Setting up Django and the fake HouseCanary service to handle Data Mocking
-    - Using virtualenv to handle development
+    * What went well?
+        - Setting up Django and the fake HouseCanary service to handle Data Mocking
+        - Using virtualenv to handle development
 
-* What could be improved in the project?
-    - Honestly wanted to be able to leverage Django Restframework with more fluidity, opted to just use Django as is due to time constraints.
-    - More tests, I have a simple unit test for the `get_have_septic` call but I'd prefer having more unit tests for the services and even different edge cases based on environment.
+    * What could be improved in the project?
+        - Honestly wanted to be able to leverage Django Restframework with more fluidity, opted to just use Django as is due to time constraints.
+        - More tests, I have a simple unit test for the `get_have_septic` call but I'd prefer having more unit tests for the services and even different edge cases based on environment.
+        - Adding Docker for scalability
+        - Security measures if needed to be considered
+        - Actual .env credentials that'll allow us to access housecanary
