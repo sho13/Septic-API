@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+import json
 
 from housecanary.services.housecanary_service import (
     HouseCanaryService,
@@ -25,5 +26,5 @@ def get_have_septic(request):
         result = True
     else:
         result = False
-
-    return HttpResponse(result)
+    
+    return HttpResponse(json.dumps({"validated": result}))
