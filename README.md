@@ -32,10 +32,11 @@
     ```bash
     $ curl "http://127.0.0.1:8000/property/septic?address=123+main-st&zipcode=12345"
     ```
+
 ## Testing
-    ```bash
-    $ python manage.py test
-    ```
+```bash
+$ python manage.py test
+```
 
 ## Notes
     - **GOAL**: Create an API that'll prompt homeowners if home has a septic system.
