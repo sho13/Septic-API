@@ -6,4 +6,3 @@ class TestCalls(TestCase):
     def test_get_have_septic(self):
         response = json.loads(self.client.get('/property/septic').content)
         self.assertEqual(response["validated"], True)
-        
