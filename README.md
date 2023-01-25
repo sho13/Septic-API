@@ -30,7 +30,7 @@
 
 6. Curl the following for result
     ```bash
-    curl "http://127.0.0.1:8000/property/septic?address=123+main-st&zipcode=12345"
+    $ curl "http://127.0.0.1:8000/property/septic?address=123+main-st&zipcode=12345"
     ```
 ## Testing
     ```bash
