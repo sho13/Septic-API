@@ -1,4 +1,4 @@
-# hometap-api
+# Septic-API
 ## Getting Started
 
 1. Navigate to project root
